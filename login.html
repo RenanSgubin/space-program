@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Space Program</title>
+    <link rel="stylesheet" href="style/login.css">
+    <script src="https://kit.fontawesome.com/92f64e9681.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+     <!--Header-->
+
+    <div class="container-header">
+        <div class="content-header">
+
+            <a id="logo-link" href="index.html">
+                <img src="img/logo-peloton.png" class="logo">
+            </a>
+
+            <a class="home-link" href="index.html">Home</a>
+            <a style="margin-left: 30px;" class="planets-spaceflights" href="planets-spaceflights.html">Planets Spaceflights</a>
+            
+            <a class="links-border" href="login.html">
+                <span class="header-login-register-link">Login and Register</span>
+            </a>
+
+            <a class="join-space-program" href="join-space-program.html">
+                    Join Space Program
+
+                    <div class="border-top-div"></div>
+                    <div class="border-bottom-div"></div>
+
+                    <div class="border-left-div"></div>
+                    <div class="border-right-div"></div>
+            </a>
+
+        </div>
+    </div>
+
+<!--Header-->
+
+
+
+    <div class="container-register">
+        <div class="content-register" data-aos="fade-up">
+
+            <div class="img-content">
+                <img src="img/astronaut2_register.png" class="astronaut-register">          
+                <div class="gorila-head-content">
+                    <img src="img/gorila_head.svg" class="gorila-head">
+                    <span>Space Program</span><br><br>
+
+                    <span class="text-1-gorila">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo. 
+                        In eleifend sapien id iaculis aliquam. Sed mauris nunc, volutpat sed suscipit eget, molestie id nisi. In hac habitasse platea dictumst. 
+                        Maecenas non porta nibh. Suspendisse aliquet mattis lorem vel malesuada. 
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="form-content">
+                    
+ 
+                    
+                    <div class="login-content">    
+                       <div class="email-login-container">
+                        <label class="form-content-title">Welcome Again</label>
+                        <span class="email-content">
+                            Email:
+                            <input type="email" class="inputs">
+                        </span><br><br>
+    
+                        <span class="password-content">
+                            Password:
+                            <input type="password" class="inputs">
+                            <span class="forgot-psw"><a href="#">Forgot your Password</a></span>
+                        </span>
+
+                        <button type="submit" class="button-submit-login">
+                            Sign-in
+                        </button>
+                        
+                        <div class="facebook-button-lines">
+                            <span class="line"></span>
+                            <span>&nbsp;&nbsp;Or&nbsp;&nbsp;</span>
+                            <span class="line"></span>
+                        </div>
+
+                        <button class="button-submit-login button-facebook">
+                            <i class="fa-brands fa-facebook"></i> Log-in with Facebook
+                        </button>
+
+                        <button class="button-submit-login button-google">
+                            <i class="fa-brands fa-google"></i> Log-in with Google
+                        </button>
+                    </div>
+
+                    </div>
+
+                    <div class="login-register-links">
+
+                        <span class="login-link" onclick="changeLoginLink()">
+                            <span>L</span>
+                            <span>O</span>
+                            <span>G</span>
+                            <span>I</span>
+                            <span>N</span>
+                        </span>
+                    
+                        <span class="register-link" onclick="changeRegisterLink()">
+                            <span>R</span>
+                            <span>E</span>
+                            <span>G</span>
+                            <span>I</span>
+                            <span>S</span>
+                            <span>T</span>
+                            <span>E</span>
+                            <span>R</span>
+                        </span>
+
+                    </div>
+
+                    <div class="register-content"> 
+
+                        <div class="email-login-container">
+
+                            <label class="form-content-title-register">Welcome, Visitor</label>
+
+                            <span class="email-content">
+                                User:
+                                <input type="text" class="inputs">
+                            </span><br><br>
+
+                            <span class="email-content">
+                                Email:
+                                <input type="email" class="inputs">
+                            </span><br><br>
+
+                            <span class="email-content">
+                                Phone Number:
+                                <input type="text" class="inputs">
+                            </span><br><br>
+        
+                            <span class="password-content">
+                                Password:
+                                <input type="password" class="inputs">
+                            </span><br><br>
+
+                            <span class="password-content">
+                                COD-ID
+                                <input type="password" class="inputs">
+                            </span><br><br>
+    
+                            <button type="submit" class="button-submit-login">
+                                Sign-in
+                            </button>
+    
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+
+
+    <div class="container-footer">
+
+        <div class="social-media-content">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <div class="content-footer">
+          <label class="footer-title">Space Program</label>
+            <img src="img/astronaut_head.svg" class="logo-footer">
+                <span class="copyright">
+                    <label>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh
+                    </label>
+                </span>
+        </div>
+
+        <span class="the-programmer">
+            Developed By: &nbsp;<a href="https://br.linkedin.com/in/renan-sgubin" style="color: white;font-size: 1rem;">Renan Sgubin</a>
+        </span>
+
+     </div>
+
+
+
+
+    <!--Fim Footer-->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script/loginRegister.js"></script>
+
+</body>
+</html>

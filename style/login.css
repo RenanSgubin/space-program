@@ -1,0 +1,531 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
+
+/*Header*/
+
+.container-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'AstronautFont';
+    z-index: 9999;
+}
+
+.content-header {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#logo-link {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.content-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(187, 187, 187);
+}
+
+.planets-spaceflights, .home-link {
+    height: 3vh;
+    transition: 0.1s all;
+}
+
+.planets-spaceflights:hover, .home-link:hover {
+    height: 3vh;
+    color: #ffffff;
+}
+
+.links-border {
+    position: relative;
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(201, 192, 192);
+    margin-left: 40px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.links-border:hover > .header-login-register-link {
+    width: 140px;
+    border-left: 1px solid rgb(201, 192, 192);
+    border-right: 1px solid rgb(201, 192, 192);
+}
+
+.header-login-register-link {
+    position: absolute;
+    width: 190px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: none;
+    transition: 0.2s all;
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+}
+
+.join-space-program {
+    position: absolute;
+    right: 3%;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.border-left-div {
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+.border-right-div {
+    position: absolute;
+    right: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+
+.border-top-div {
+    position: absolute;
+    top: 0%;
+    width: 250px;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.border-bottom-div {
+    position: absolute;
+    bottom: 0%;
+    width: 250px;
+    height: 1.5px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.join-space-program:hover {
+    border-left: none;
+    border-right: none;
+}
+
+.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
+    background-color: rgb(201, 192, 192);
+}
+
+.join-space-program:hover > .border-left-div {
+    left: 10%;
+}
+.join-space-program:hover > .border-right-div {
+    right: 10%;
+}
+
+/*Fim header*/
+
+
+
+
+@font-face {
+    font-family: 'AstronautFont';
+    src:  url('../fonts/astronaut_personaluse-webfont.woff') format('woff2'),
+          url('../fonts/astronaut_personaluse-webfont.woff2') format('woff');
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: rgb(36, 36, 36);
+    overflow-x: hidden;
+    background-size: 100%;
+}
+
+.container-register {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'AstronautFont';
+}
+
+.content-register {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-content {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.astronaut-register {
+    width: 100%;
+    height: 80vh;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    filter: brightness(25%);
+}
+
+.gorila-head-content {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #c7c7c7;
+    font-size: 1.9rem;
+}
+
+.gorila-head {
+    width: 35%;
+    filter: drop-shadow(0 0 0.3em rgb(255, 255, 255));
+}
+
+.text-1-gorila {
+    width: 80%;
+    font-size: 0.95rem;
+}
+
+
+
+
+/*************************************LOGIN***********/
+.form-content {
+    position: relative;
+    width: 55%;
+    height: 80vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.form-content-title {
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+
+.email-login-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email-content, .password-content {
+    width: 60%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs {
+    width: 100%;
+    height: 6vh;
+    border-radius: 3px;
+    border: 2px solid rgb(221, 219, 219);
+    padding-left: 10px;
+}
+
+.forgot-psw {
+    margin-top: 10px;
+}
+
+.forgot-psw a {
+    color: rgb(35, 4, 49);
+}
+
+.button-submit-login {
+    width: 60%;
+    height: 7vh;
+    border: 0;
+    outline-style: none;
+    border-radius: 3px;
+    background-color: #333333;
+    color: #d1d1d1;
+    font-family: 'AstronautFont';
+    font-size: 1.05rem;
+    margin-top: 20px;
+}
+
+.button-submit-login:hover {
+    background-color: #111111;
+}
+
+.facebook-button-lines {
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 48%;
+    height: 0.5px;
+    background-color: rgb(53, 53, 53);
+}
+
+.button-facebook {
+    position: relative;
+    background-color: #4267B2;
+    color: #dadada;
+    -webkit-box-shadow: 8px 5px 16px -7px #000000; 
+    box-shadow: 8px 5px 16px -7px #000000;
+}
+
+.button-facebook:hover {
+    background-color: #1a3e86;
+}
+
+.button-facebook .fa-facebook {
+    position: absolute;
+    left: 10%;
+    transform: scale(1.5);
+}
+
+.button-google {
+    position: relative;
+    background-color: #e9e9e9;
+    color: #2c2c2c;
+    -webkit-box-shadow: 8px 5px 16px -7px #000000; 
+    box-shadow: 8px 5px 16px -7px #000000;
+}
+
+.button-google:hover {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+.fa-google {
+    position: absolute;
+    left: 10%;
+    transform: scale(1.5);
+}
+
+
+
+
+/*************************************FIM LOGIN***************************************/
+
+
+
+/*************************************REGISTRO*****************************************/
+
+.register-content {
+    position: absolute;
+    bottom: 150%;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    transition: 0.5s all;
+}
+
+.login-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    transition: 0.5s all;
+}
+
+.form-content-title-register {
+    margin-top: 2%;
+    font-size: 1.4rem;
+}
+
+/*************************************FIM REGISTRO*****************************************/
+
+
+
+
+.login-register-links {
+    position: absolute;
+    right: 0%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.login-register-links span {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.2s all;
+    z-index: 9999;
+}
+
+.login-link  {
+    background-color: #1a1a1a;
+    color: #e2e2e2;
+    -webkit-box-shadow: 8px 5px 16px -7px #1e1cb8; 
+    box-shadow: 8px 5px 16px -7px #1e1cb8;
+}
+
+.register-link {
+    background-color: #e9e8e8;
+    opacity: 0.7;
+}
+
+
+
+
+
+/*******************Footer**************************/
+
+
+
+
+.container-footer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    color: #e4e4e4;
+    font-family: 'Barlow', sans-serif;
+}
+
+.content-footer {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-media-content {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    width: 50px;
+    height: 230px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #525050;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.social-media-content i {
+    margin-left: 13px;
+    cursor: pointer;
+    transition: 0.2s all;
+    transform: scale(1.6);
+}
+
+.social-media-content i:hover {
+    color: #243949;
+}
+
+.logo-footer {
+    width: 250px;
+    filter: drop-shadow(0 0 0.2em rgb(196, 196, 196));
+}
+
+.footer-title {
+    font-size: 1.4rem;
+}
+
+.copyright {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.80rem;
+    border-top: 1px solid orange;
+}
+
+.the-programmer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+    font-size: 0.9rem;
+}
+
+
+
+
+/*******************Fim Footer**************************/

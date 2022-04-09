@@ -1,0 +1,662 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
+a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+
+@font-face {
+    font-family: 'AstronautFont';
+    src:  url('../fonts/astronaut_personaluse-webfont.woff') format('woff2'),
+          url('../fonts/astronaut_personaluse-webfont.woff2') format('woff');
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: rgb(36, 36, 36);
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+
+/*Header*/
+
+.container-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'AstronautFont';
+    z-index: 9999;
+}
+
+.content-header {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#logo-link {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.content-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(187, 187, 187);
+}
+
+.planets-spaceflights, .home-link {
+    height: 3vh;
+    transition: 0.1s all;
+}
+
+.planets-spaceflights:hover, .home-link:hover {
+    height: 3vh;
+    color: #ffffff;
+}
+
+.links-border {
+    position: relative;
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(201, 192, 192);
+    margin-left: 40px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.links-border:hover > .header-login-register-link {
+    width: 140px;
+    border-left: 1px solid rgb(201, 192, 192);
+    border-right: 1px solid rgb(201, 192, 192);
+}
+
+.header-login-register-link {
+    position: absolute;
+    width: 190px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: none;
+    transition: 0.2s all;
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+}
+
+.join-space-program {
+    position: absolute;
+    right: 3%;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.border-left-div {
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+.border-right-div {
+    position: absolute;
+    right: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+
+.border-top-div {
+    position: absolute;
+    top: 0%;
+    width: 250px;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.border-bottom-div {
+    position: absolute;
+    bottom: 0%;
+    width: 250px;
+    height: 1.5px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.join-space-program:hover {
+    border-left: none;
+    border-right: none;
+}
+
+.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
+    background-color: rgb(201, 192, 192);
+}
+
+.join-space-program:hover > .border-left-div {
+    left: 10%;
+}
+.join-space-program:hover > .border-right-div {
+    right: 10%;
+}
+
+/*Fim header*/
+
+
+
+
+
+/*Conteudo-1*/
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.bubble {
+    position: absolute;
+    right: -10%;
+    bottom: -13%;
+    width: 55%;
+    height: 55vw;
+    overflow-x: hidden;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    z-index: -1;
+}
+
+.img-content {
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.astronaut-head {
+    width: 100%;
+    filter: drop-shadow(0 0 0.3em rgb(255, 255, 255));
+}
+
+.content-texts-home {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+   
+}
+.title-home {
+    font-size: 4.5rem;
+}
+
+.text-home {
+    font-size: 1.1rem;
+}
+
+.login-link {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #1e3c72;
+    padding: 10px;
+    border: 0;
+    outline-style: none;
+    border-radius: 2px;
+    transition: 0.2s all;
+    cursor: pointer;
+    font-family: 'AstronautFont';
+}
+
+.login-link:hover {
+    background-color: #0f2857;
+}
+
+/*Fim - Conteudo-1*/
+
+
+
+/*Conteudo-0*/
+.container-0 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-0 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 5px;
+    color: #e0e0e0;
+}
+
+.logo-container {
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.logo-container-title {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'AstronautFont';
+}
+
+.logo-container img {
+    width: 100%;
+    filter: drop-shadow(0 0 0.3em rgb(204, 204, 204));
+}
+
+.popcorn-description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+
+.popcorn-description img{
+    width: 300px;
+}
+
+/*Fim - Conteudo-0*/
+
+
+
+
+
+/*Conteudo-2*/
+.container-2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.content-2 {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid white;
+}
+
+.content-2-title {
+    font-size: 1.7rem;
+    font-family: 'AstronautFont';
+    margin-top: 4%;
+}
+
+.content-2-texts {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-2-texts img {
+    width: 55%;
+    filter: drop-shadow(0 0 0.3em rgb(196, 196, 196));
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.content-2-texts img:hover {
+    transform: scale(1.1);
+}
+
+.gradient-border-bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 5px;
+    z-index: 9999;
+    background-image: linear-gradient(120deg, #fda085 0%, #f6d365 100%);
+}
+
+#review-img {
+    width: 55%;
+}
+
+
+/*Container 3*/
+.container-3 {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 4;
+}
+
+.title-container-3 {
+    font-size: 1.6rem;
+    font-family: 'AstronautFont';
+    color: #dadada;
+}
+
+.content-3 {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-content-astronaut-home {
+    width: 330px;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+}
+
+.astronaut_home_content3 {
+    width: 400px;
+    filter: drop-shadow(0 0 0.3em rgb(255, 255, 255));
+    z-index: 9999;
+}
+
+.people-rate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-rate {
+    position: relative;
+    width: 450px;
+    height: 12vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #424242;
+    color: #dadada;
+    padding: 10px;
+    font-size: 0.95rem;
+    -webkit-box-shadow: 1px 2px 6px 1px #3f3f3f; 
+    box-shadow: 1px 2px 6px 1px #3f3f3f;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gradient-border-left {
+    position: absolute;
+    left: 0%;
+    width: 3px;
+    height: 100%;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    margin-right: 10px;
+}
+
+.span-people {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rate-text {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.teste {
+    position: absolute;
+    right: 25%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(236, 235, 235);
+    z-index: -1;
+}
+
+.teste-left {
+    position: absolute;
+    left: 25%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(236, 235, 235);
+    z-index: -1;
+}
+
+.teste-left-rotate {
+    position: absolute;
+    left: 75%;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(236, 235, 235);
+    z-index: -1;
+    transform: rotate(25deg);
+}
+
+
+
+
+/*CONTAINER 4*/
+
+.container-4 {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    color: #dadada;
+}
+
+.content-4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+.spaceship {
+    position: absolute;
+    left: -10%;
+    filter: drop-shadow(0 0 0.4em rgb(196, 196, 196));
+}
+
+.text-content-container-4 {
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 5%;
+    border-radius: 3px;
+    z-index: 5;
+}
+
+.title-text-content-container-4 {
+    font-family: 'AstronautFont';
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/*******************Footer**************************/
+
+
+
+
+.container-footer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    color: #e4e4e4;
+}
+
+.content-footer {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-media-content {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    width: 50px;
+    height: 230px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #525050;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.social-media-content i {
+    margin-left: 13px;
+    cursor: pointer;
+    transition: 0.2s all;
+    transform: scale(1.6);
+}
+
+.social-media-content i:hover {
+    color: #243949;
+}
+
+.logo-footer {
+    width: 250px;
+    filter: drop-shadow(0 0 0.2em rgb(196, 196, 196));
+}
+
+.footer-title {
+    font-size: 1.4rem;
+}
+
+.copyright {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.80rem;
+    border-top: 1px solid orange;
+}
+
+.the-programmer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+    font-size: 0.9rem;
+}
+
+
+
+
+/*******************Fim Footer**************************/

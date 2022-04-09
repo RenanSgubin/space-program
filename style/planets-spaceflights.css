@@ -1,0 +1,414 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+
+a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+
+@font-face {
+    font-family: 'AstronautFont';
+    src:  url('../fonts/astronaut_personaluse-webfont.woff') format('woff2'),
+          url('../fonts/astronaut_personaluse-webfont.woff2') format('woff');
+}
+
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: rgb(36, 36, 36);
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+/*Header*/
+
+.container-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'AstronautFont';
+    z-index: 9999;
+}
+
+.content-header {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#logo-link {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.content-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(187, 187, 187);
+}
+
+.planets-spaceflights, .home-link {
+    height: 3vh;
+    transition: 0.1s all;
+}
+
+.planets-spaceflights:hover, .home-link:hover {
+    height: 3vh;
+    color: #ffffff;
+}
+
+.links-border {
+    position: relative;
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(201, 192, 192);
+    margin-left: 40px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.links-border:hover > .header-login-register-link {
+    width: 140px;
+    border-left: 1px solid rgb(201, 192, 192);
+    border-right: 1px solid rgb(201, 192, 192);
+}
+
+.header-login-register-link {
+    position: absolute;
+    width: 190px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: none;
+    transition: 0.2s all;
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+}
+
+.join-space-program {
+    position: absolute;
+    right: 3%;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.border-left-div {
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+.border-right-div {
+    position: absolute;
+    right: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+
+.border-top-div {
+    position: absolute;
+    top: 0%;
+    width: 250px;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.border-bottom-div {
+    position: absolute;
+    bottom: 0%;
+    width: 250px;
+    height: 1.5px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.join-space-program:hover {
+    border-left: none;
+    border-right: none;
+}
+
+.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
+    background-color: rgb(201, 192, 192);
+}
+
+.join-space-program:hover > .border-left-div {
+    left: 10%;
+}
+.join-space-program:hover > .border-right-div {
+    right: 10%;
+}
+
+/*Fim header*/
+
+
+
+
+
+.container-planets-spaceflights {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(185, 185, 185);
+}
+
+
+/********************************CONTENT 1*********************************/
+.content-1-planets-spaceflights {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(151, 151, 151);
+}
+
+.bg-1 {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #e4e4e4;
+}
+
+.bg-2 {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #222222;
+}
+
+.title-spaceflights-1 {
+    position: absolute;
+    left: 5%;
+    font-size: 4.4rem;
+    font-family: 'AstronautFont';
+}
+
+.title-spaceflights-2 {
+    position: absolute;
+    right: 3%;
+    font-size: 4.4rem;
+    font-family: 'AstronautFont';
+}
+
+.planet-wallpaper {
+    width: 50%;
+    filter: drop-shadow(0 0 0.9em rgb(236, 236, 236));
+}
+
+
+
+/********************CONTENT 2 ***********************/
+.content-2-planets-spaceflights {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(151, 151, 151);
+}
+
+.img-content-white-bg {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    color: rgb(37, 37, 37);
+}
+
+.img-content-black-bg {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #272727;
+    color: rgb(151, 151, 151);
+}
+
+.moon {
+    width: 60%;
+    filter: drop-shadow(0 0 0.3em rgb(238, 238, 238));
+}
+
+.img-content-white-bg img {
+    width: 70%;
+}
+
+.titles-planets {
+    font-family: 'AstronautFont';
+    font-size: 1.6rem;
+}
+
+.black-description-content {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #272727;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.15rem;
+}
+
+.white-description-content {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    color: rgb(37, 37, 37);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.15rem;
+}
+
+
+
+/*******************Footer**************************/
+
+
+
+
+.container-footer {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    color: #e4e4e4;
+}
+
+.content-footer {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-media-content {
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    width: 50px;
+    height: 230px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #525050;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.social-media-content i {
+    margin-left: 13px;
+    cursor: pointer;
+    transition: 0.2s all;
+    transform: scale(1.6);
+}
+
+.social-media-content i:hover {
+    color: #243949;
+}
+
+.logo-footer {
+    width: 250px;
+    filter: drop-shadow(0 0 0.2em rgb(196, 196, 196));
+}
+
+.footer-title {
+    font-size: 1.4rem;
+}
+
+.copyright {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.80rem;
+    border-top: 1px solid orange;
+}
+
+.the-programmer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+    font-size: 0.9rem;
+}
+
+
+
+
+/*******************Fim Footer**************************/
