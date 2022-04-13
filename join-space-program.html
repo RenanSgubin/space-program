@@ -20,22 +20,50 @@
               <img src="img/logo-peloton.png" class="logo">
           </a>
 
-          <a class="home-link" href="index.html">Home</a>
-          <a style="margin-left: 30px;" class="planets-spaceflights" href="planets-spaceflights.html">Planets Spaceflights</a>
-          
-          <a class="links-border" href="login.html">
-              <span class="header-login-register-link">Login and Register</span>
-          </a>
+          <div class="links-container">
+            <a class="home-link" href="index.html">Home</a>
+            <a style="margin-left: 30px;" class="planets-spaceflights" href="planets-spaceflights.html">Planets Spaceflights</a>
+            
+            <a class="links-border" href="login.html">
+                <span class="header-login-register-link">Login and Register</span>
+            </a>
 
-          <a class="join-space-program" href="join-space-program.html">
-                  Join Space Program
+            <a class="join-space-program" href="join-space-program.html">
+                    Join Space Program
 
-                  <div class="border-top-div"></div>
-                  <div class="border-bottom-div"></div>
+                    <div class="border-top-div"></div>
+                    <div class="border-bottom-div"></div>
 
-                  <div class="border-left-div"></div>
-                  <div class="border-right-div"></div>
-          </a>
+                    <div class="border-left-div"></div>
+                    <div class="border-right-div"></div>
+            </a>
+        </div>
+
+          <!--Hamb Menu-->
+          <div class="container-hamb-menu" onclick="showHiddenMenu()">
+            <div class="hamb-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!--Menu Escondido-->
+        <div class="container-hidden-menu">
+            <div class="content-hidden-menu">
+                <a class="links-hidden-menu" href="index.html">Home</a>
+                <a class="links-hidden-menu" href="planets-spaceflights.html">Planets Spaceflights</a>
+                
+                <a class="links-hidden-menu" href="login.html">
+                    Login and Register
+                </a>
+    
+                <a class="links-hidden-menu" href="join-space-program.html">
+                        Join Space Program
+                </a>
+
+            </div>
+        </div>
 
       </div>
   </div>
@@ -194,6 +222,6 @@
     </script>
 
     <script src="https://kit.fontawesome.com/92f64e9681.js" crossorigin="anonymous"></script>
-
+    <script src="script/showHiddenMenuHeader.js"></script>
 </body>
 </html>

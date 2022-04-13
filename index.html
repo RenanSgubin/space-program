@@ -20,22 +20,52 @@
                 <img src="img/logo-peloton.png" class="logo">
             </a>
 
-            <a class="home-link" href="index.html">Home</a>
-            <a style="margin-left: 30px;" class="planets-spaceflights" href="planets-spaceflights.html">Planets Spaceflights</a>
-            
-            <a class="links-border" href="login.html">
-                <span class="header-login-register-link">Login and Register</span>
-            </a>
+            <div class="links-container">
+                <a class="home-link" href="index.html">Home</a>
+                <a style="margin-left: 30px;" class="planets-spaceflights" href="planets-spaceflights.html">Planets Spaceflights</a>
+                
+                <a class="links-border" href="login.html">
+                    <span class="header-login-register-link">Login and Register</span>
+                </a>
+    
+                <a class="join-space-program" href="join-space-program.html">
+                        Join Space Program
+    
+                        <div class="border-top-div"></div>
+                        <div class="border-bottom-div"></div>
+    
+                        <div class="border-left-div"></div>
+                        <div class="border-right-div"></div>
+                </a>
+            </div>
 
-            <a class="join-space-program" href="join-space-program.html">
-                    Join Space Program
 
-                    <div class="border-top-div"></div>
-                    <div class="border-bottom-div"></div>
+            <!--Hamb Menu-->
+            <div class="container-hamb-menu" onclick="showHiddenMenu()">
+                <div class="hamb-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
 
-                    <div class="border-left-div"></div>
-                    <div class="border-right-div"></div>
-            </a>
+            <!--Menu Escondido-->
+            <div class="container-hidden-menu">
+                <div class="content-hidden-menu">
+                    <a class="links-hidden-menu" href="index.html">Home</a>
+                    <a class="links-hidden-menu" href="planets-spaceflights.html">Planets Spaceflights</a>
+                    
+                    <a class="links-hidden-menu" href="login.html">
+                        Login and Register
+                    </a>
+        
+                    <a class="links-hidden-menu" href="join-space-program.html">
+                            Join Space Program
+                    </a>
+
+                </div>
+            </div>
+
 
         </div>
     </div>
@@ -114,10 +144,10 @@
     </div>
 
     <div class="container-3">
-        <label class="title-container-3">Astronaut Anatomy</label>
+        <label class="title-container-3">Astronaut Details</label>
         <div class="content-3">
             <div class="people-rate" data-aos="fade-up">
-                <div style="margin-bottom: 200px;">
+                <div class="astronaut-detail-pc-user">
                     <div class="div-rate">
                         <span class="gradient-border-left"></span>
                         <span class="teste-left-rotate"></span>
@@ -196,6 +226,45 @@
                 </div>
             </div>
         </div>
+
+        <!--Para usuários Mobile-->
+
+
+        <div class="astronaut-details-mobile">
+            <label class="title-container-3-mobile">Astronaut Details</label>
+
+            <div class="astronaut-details-mobile-text">
+                <b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br>
+                <b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br>
+                <b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br>
+            </div>
+
+            <div class="img-content-astronaut-home-mobile" data-aos="fade-up">
+                <img src="img/astronaut_home_content3.svg" class="astronaut_home_content3">
+            </div>
+
+            <div class="astronaut-details-mobile-text">
+                <b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br>
+                <b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br>
+                <b>Lorem:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br>
+            </div>
+
+        </div>
+
+    <!--Fim Usuários Mobile-->
+
     </div> 
 </div>
 
@@ -214,13 +283,30 @@
                     Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.<br><br>
                     Quisque elit ex, rhoncus quis ullamcorper sit amet, ultricies in felis. 
                     Aliquam congue massa et tincidunt luctus. In sem magna, efficitur sed egestas id, finibus vel erat.
-                    Morbi id turpis eget libero iaculis accumsan eget sit amet dui. 
+                    Morbi id turpis eget libero iaculis accumsan eget sit amet dui.
+
                     Fusce dictum ligula sed eros pulvinar, sit amet ultrices eros fermentum. 
                     In elementum metus ac dapibus euismod. Maecenas congue blandit ex sit amet pulvinar.
                     Donec vestibulum augue hendrerit, imperdiet elit id, aliquet ligula.<br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
+                    viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
+                    Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.br <br><br>
+
+                    Quisque elit ex, rhoncus quis ullamcorper sit amet, ultricies in felis. 
+                    Aliquam congue massa et tincidunt luctus. In sem magna, efficitur sed egestas id, finibus vel erat.
+                    Morbi id turpis eget libero iaculis accumsan eget sit amet dui. 
+                    Fusce dictum ligula sed eros pulvinar, sit amet ultrices eros fermentum. 
+                    In elementum metus ac dapibus euismod. Maecenas congue blandit ex sit amet pulvinar.
+                    Donec vestibulum augue hendrerit, imperdiet elit id, aliquet ligula. <br><br>
+
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper urna nibh, 
                     viverra vestibulum enim laoreet non. Sed eget odio vitae enim congue pulvinar sodales eu lorem. 
                     Nullam sapien lacus, porttitor sed efficitur a, luctus ut justo.
+                    Quisque elit ex, rhoncus quis ullamcorper sit amet, ultricies in felis. 
+                    Aliquam congue massa et tincidunt luctus. In sem magna, efficitur sed egestas id, finibus vel erat.
+                    Morbi id turpis eget libero iaculis accumsan eget sit amet dui.
+
 
                 </div>
             </div>
@@ -279,6 +365,7 @@
     </script>
     
     <script src="https://kit.fontawesome.com/92f64e9681.js" crossorigin="anonymous"></script>
+    <script src="script/showHiddenMenuHeader.js"></script>
 
 </body>
 </html>

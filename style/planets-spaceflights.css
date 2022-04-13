@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
 
+@import url("header.css");
+
 a {
     text-decoration: none;
     color: rgb(221, 221, 221);
@@ -31,162 +33,6 @@ body {
     overflow-x: hidden;
     font-family: 'Barlow', sans-serif;
 }
-
-
-
-/*Header*/
-
-.container-header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    font-family: 'AstronautFont';
-    z-index: 9999;
-}
-
-.content-header {
-    width: 95%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-#logo-link {
-    width: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 100%;
-}
-
-.content-header a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: rgb(187, 187, 187);
-}
-
-.planets-spaceflights, .home-link {
-    height: 3vh;
-    transition: 0.1s all;
-}
-
-.planets-spaceflights:hover, .home-link:hover {
-    height: 3vh;
-    color: #ffffff;
-}
-
-.links-border {
-    position: relative;
-    width: 180px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(201, 192, 192);
-    margin-left: 40px;
-    transition: 0.2s all;
-    cursor: pointer;
-}
-
-.links-border:hover > .header-login-register-link {
-    width: 140px;
-    border-left: 1px solid rgb(201, 192, 192);
-    border-right: 1px solid rgb(201, 192, 192);
-}
-
-.header-login-register-link {
-    position: absolute;
-    width: 190px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline-style: none;
-    transition: 0.2s all;
-    cursor: pointer;
-    background-color: rgb(36, 36, 36);
-}
-
-.join-space-program {
-    position: absolute;
-    right: 3%;
-    width: 250px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    outline-style: none;
-    cursor: pointer;
-}
-
-.border-left-div {
-    position: absolute;
-    left: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-.border-right-div {
-    position: absolute;
-    right: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-
-.border-top-div {
-    position: absolute;
-    top: 0%;
-    width: 250px;
-    height: 1px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.border-bottom-div {
-    position: absolute;
-    bottom: 0%;
-    width: 250px;
-    height: 1.5px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.join-space-program:hover {
-    border-left: none;
-    border-right: none;
-}
-
-.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
-    background-color: rgb(201, 192, 192);
-}
-
-.join-space-program:hover > .border-left-div {
-    left: 10%;
-}
-.join-space-program:hover > .border-right-div {
-    right: 10%;
-}
-
-/*Fim header*/
-
-
-
-
 
 .container-planets-spaceflights {
     position: relative;
@@ -282,12 +128,12 @@ body {
 }
 
 .moon {
-    width: 60%;
+    width: 400px;
     filter: drop-shadow(0 0 0.3em rgb(238, 238, 238));
 }
 
 .img-content-white-bg img {
-    width: 70%;
+    width: 400px;
 }
 
 .titles-planets {
@@ -412,3 +258,84 @@ body {
 
 
 /*******************Fim Footer**************************/
+
+
+@media screen and (max-width: 850px) {
+    
+
+    .title-spaceflights-2, .title-spaceflights-1 {
+        position: relative;
+        right: 0%;
+        left: 0%;
+    }
+    .content-1-planets-spaceflights {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    
+
+    .content-2-planets-spaceflights {
+        flex-direction: column;
+    }
+
+    .img-content-white-bg, .img-content-black-bg, .white-description-content, .black-description-content {
+        width: 100%;
+    }
+
+    .planet-texts-content {
+        width: 90%;
+        margin-bottom: 50px;
+        height: auto;
+    }
+
+    .img-content-white-bg {
+        background-color: #272727;
+        color: #e4e4e4;
+    }
+    .img-content-black-bg {
+        background-color: #e4e4e4;
+        color: #272727;
+    }
+
+    .titles-planets  {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 750px) {
+    
+
+    .img-content-white-bg, .img-content-black-bg {
+        height: 40vh;
+    }
+
+    .content-2-planets-spaceflights {
+        height: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    
+
+    .moon, .img-content-white-bg img {
+        width: 300px;
+    }
+
+    .title-spaceflights-1, .title-spaceflights-2 {
+        font-size: 3.5rem;
+    }
+
+    .planet-wallpaper {
+        width: 75%;
+    }
+    
+
+
+}

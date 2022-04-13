@@ -1,0 +1,232 @@
+
+
+
+/*Header*/
+
+.container-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'AstronautFont';
+    z-index: 9999;
+}
+
+.content-header {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.links-container {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#logo-link {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+}
+
+.content-header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(187, 187, 187);
+}
+
+.planets-spaceflights, .home-link {
+    height: 3vh;
+    transition: 0.1s all;
+}
+
+.planets-spaceflights:hover, .home-link:hover {
+    height: 3vh;
+    color: #ffffff;
+}
+
+.links-border {
+    position: relative;
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(201, 192, 192);
+    margin-left: 40px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.links-border:hover > .header-login-register-link {
+    width: 140px;
+    border-left: 1px solid rgb(201, 192, 192);
+    border-right: 1px solid rgb(201, 192, 192);
+}
+
+.header-login-register-link {
+    position: absolute;
+    width: 190px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-style: none;
+    transition: 0.2s all;
+    cursor: pointer;
+    background-color: rgb(36, 36, 36);
+}
+
+.join-space-program {
+    position: absolute;
+    right: 3%;
+    width: 250px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    outline-style: none;
+    cursor: pointer;
+}
+
+.border-left-div {
+    position: absolute;
+    left: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+.border-right-div {
+    position: absolute;
+    right: 0%;
+    width: 2px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s all;
+}
+
+
+.border-top-div {
+    position: absolute;
+    top: 0%;
+    width: 250px;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.border-bottom-div {
+    position: absolute;
+    bottom: 0%;
+    width: 250px;
+    height: 1.5px;
+    background-color: rgb(202, 202, 202);
+    transition: 0.5s all;
+}
+
+.join-space-program:hover {
+    border-left: none;
+    border-right: none;
+}
+
+.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
+    background-color: rgb(201, 192, 192);
+}
+
+.join-space-program:hover > .border-left-div {
+    left: 10%;
+}
+.join-space-program:hover > .border-right-div {
+    right: 10%;
+}
+
+
+
+.container-hamb-menu {
+    display: none;
+    position: fixed;
+    right: 10%;
+    z-index: 9999;
+}
+
+.hamb-menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.hamb-menu span {
+    width: 37px;
+    height: 3px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 3px;
+}
+
+.hamb-menu span:nth-child(2) {
+    width: 25px;
+}
+
+.container-hidden-menu {
+    position: fixed;
+    right: -100%;
+    top: 0%;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    transition: 0.3s all;
+    z-index: 9998;
+}
+
+.content-hidden-menu {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-hidden-menu a {
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.content-hidden-menu hr {
+    width: 80%;
+}
+
+
+/*Fim header*/
+
+
+@media screen and (max-width: 1150px) {
+
+    .container-hamb-menu {
+        display: flex;
+    }
+
+    .links-container {
+        display: none;
+    }
+
+}

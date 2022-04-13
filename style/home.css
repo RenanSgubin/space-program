@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
+@import url("header.css");
+
 
 a {
     text-decoration: none;
@@ -35,158 +37,6 @@ body {
 
 
 
-/*Header*/
-
-.container-header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    font-family: 'AstronautFont';
-    z-index: 9999;
-}
-
-.content-header {
-    width: 95%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-#logo-link {
-    width: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 100%;
-}
-
-.content-header a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: rgb(187, 187, 187);
-}
-
-.planets-spaceflights, .home-link {
-    height: 3vh;
-    transition: 0.1s all;
-}
-
-.planets-spaceflights:hover, .home-link:hover {
-    height: 3vh;
-    color: #ffffff;
-}
-
-.links-border {
-    position: relative;
-    width: 180px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(201, 192, 192);
-    margin-left: 40px;
-    transition: 0.2s all;
-    cursor: pointer;
-}
-
-.links-border:hover > .header-login-register-link {
-    width: 140px;
-    border-left: 1px solid rgb(201, 192, 192);
-    border-right: 1px solid rgb(201, 192, 192);
-}
-
-.header-login-register-link {
-    position: absolute;
-    width: 190px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline-style: none;
-    transition: 0.2s all;
-    cursor: pointer;
-    background-color: rgb(36, 36, 36);
-}
-
-.join-space-program {
-    position: absolute;
-    right: 3%;
-    width: 250px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    outline-style: none;
-    cursor: pointer;
-}
-
-.border-left-div {
-    position: absolute;
-    left: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-.border-right-div {
-    position: absolute;
-    right: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-
-.border-top-div {
-    position: absolute;
-    top: 0%;
-    width: 250px;
-    height: 1px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.border-bottom-div {
-    position: absolute;
-    bottom: 0%;
-    width: 250px;
-    height: 1.5px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.join-space-program:hover {
-    border-left: none;
-    border-right: none;
-}
-
-.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
-    background-color: rgb(201, 192, 192);
-}
-
-.join-space-program:hover > .border-left-div {
-    left: 10%;
-}
-.join-space-program:hover > .border-right-div {
-    right: 10%;
-}
-
-/*Fim header*/
-
-
-
 
 
 /*Conteudo-1*/
@@ -210,8 +60,8 @@ body {
     position: absolute;
     right: -10%;
     bottom: -13%;
-    width: 55%;
-    height: 55vw;
+    width: 1000px;
+    height: 1000px;
     overflow-x: hidden;
     border-radius: 50%;
     background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
@@ -226,7 +76,7 @@ body {
 }
 
 .astronaut-head {
-    width: 100%;
+    width: 700px;
     filter: drop-shadow(0 0 0.3em rgb(255, 255, 255));
 }
 
@@ -342,7 +192,7 @@ body {
 .container-2 {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,8 +202,7 @@ body {
 
 .content-2 {
     position: relative;
-    width: 60%;
-    height: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,15 +217,16 @@ body {
 }
 
 .content-2-texts {
-    width: 65%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .content-2-texts img {
-    width: 55%;
+    width: 400px;
     filter: drop-shadow(0 0 0.3em rgb(196, 196, 196));
     cursor: pointer;
     transition: 0.2s all;
@@ -400,11 +250,53 @@ body {
 }
 
 
+/*Para usuários mobile*/
+
+.astronaut-details-mobile {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.title-container-3-mobile {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-family: 'AstronautFont';
+    color: #dadada;
+    z-index: 9999;
+}
+
+.astronaut-details-mobile-text {
+    width: 90%;
+    color: #e2e2e3;
+    background-color: #313131;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.astronaut-details-mobile-text:nth-child(1) {
+    
+}
+
+.img-content-astronaut-home-mobile {
+    height: 60vh;
+}
+
+
+
+
+
+
 /*Container 3*/
 .container-3 {
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,6 +305,7 @@ body {
 }
 
 .title-container-3 {
+
     font-size: 1.6rem;
     font-family: 'AstronautFont';
     color: #dadada;
@@ -449,6 +342,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .div-rate {
     position: relative;
@@ -528,8 +422,9 @@ body {
 .container-4 {
     position: relative;
     width: 100%;
-    height: 150vh;
+    height: auto;
     color: #dadada;
+    margin-top: 200px;
 }
 
 .content-4 {
@@ -538,33 +433,39 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     font-size: 1.2rem;
 }
 
 .spaceship {
-    position: absolute;
+    width: 1000px;
+    position: relative;
+    top: 10%;
     left: -10%;
     filter: drop-shadow(0 0 0.4em rgb(196, 196, 196));
 }
 
 .text-content-container-4 {
-    width: 35%;
-    height: 80vh;
+    position: absolute;
+    width: 65%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
     margin-right: 5%;
-    border-radius: 3px;
+    border-radius: 5px;
     z-index: 5;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 20px 0 rgba(35, 35, 35, 0.37);
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 3px );
 }
 
 .title-text-content-container-4 {
     font-family: 'AstronautFont';
     font-size: 1.6rem;
-    margin-top: 20px;
 }
 
 
@@ -660,3 +561,81 @@ body {
 
 
 /*******************Fim Footer**************************/
+
+
+@media screen and (max-width: 1368px) {
+
+    .content-2-texts img {
+        width: 300px;
+    }
+
+    .people-rate {
+        display: none;
+    }
+
+    .astronaut-details-mobile {
+        display: flex;
+    }
+
+    .title-container-3 {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .astronaut-head {
+        width: 400px;
+    }
+
+    .bubble {
+        width: 700px;
+        height: 700px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+
+    .content-0 {
+        flex-direction: column;
+    }
+
+    .popcorn-description {
+        width: 90%;
+    }
+
+    .logo-container img {
+        margin-bottom: 70px;
+    }
+
+    .bubble {
+        display: none;
+    }
+
+    .container-4 {
+        height: 130vh;
+    }
+
+    .text-content-container-4 {
+        width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .container-4 {
+        height: 180vh;
+    }
+
+}

@@ -4,160 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
-
-
-/*Header*/
-
-.container-header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    font-family: 'AstronautFont';
-    z-index: 9999;
-}
-
-.content-header {
-    width: 95%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-#logo-link {
-    width: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 100%;
-}
-
-.content-header a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: rgb(187, 187, 187);
-}
-
-.planets-spaceflights, .home-link {
-    height: 3vh;
-    transition: 0.1s all;
-}
-
-.planets-spaceflights:hover, .home-link:hover {
-    height: 3vh;
-    color: #ffffff;
-}
-
-.links-border {
-    position: relative;
-    width: 180px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(201, 192, 192);
-    margin-left: 40px;
-    transition: 0.2s all;
-    cursor: pointer;
-}
-
-.links-border:hover > .header-login-register-link {
-    width: 140px;
-    border-left: 1px solid rgb(201, 192, 192);
-    border-right: 1px solid rgb(201, 192, 192);
-}
-
-.header-login-register-link {
-    position: absolute;
-    width: 190px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline-style: none;
-    transition: 0.2s all;
-    cursor: pointer;
-    background-color: rgb(36, 36, 36);
-}
-
-.join-space-program {
-    position: absolute;
-    right: 3%;
-    width: 250px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    outline-style: none;
-    cursor: pointer;
-}
-
-.border-left-div {
-    position: absolute;
-    left: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-.border-right-div {
-    position: absolute;
-    right: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-
-.border-top-div {
-    position: absolute;
-    top: 0%;
-    width: 250px;
-    height: 1px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.border-bottom-div {
-    position: absolute;
-    bottom: 0%;
-    width: 250px;
-    height: 1.5px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.join-space-program:hover {
-    border-left: none;
-    border-right: none;
-}
-
-.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
-    background-color: rgb(201, 192, 192);
-}
-
-.join-space-program:hover > .border-left-div {
-    left: 10%;
-}
-.join-space-program:hover > .border-right-div {
-    right: 10%;
-}
-
-/*Fim header*/
-
-
-
+@import url("header.css");
 
 @font-face {
     font-family: 'AstronautFont';
@@ -176,17 +23,12 @@ button {
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     background-color: rgb(36, 36, 36);
     overflow-x: hidden;
-    background-size: 100%;
 }
 
 .container-register {
@@ -199,6 +41,7 @@ body {
 }
 
 .content-register {
+    position: relative;
     width: 90%;
     height: 100%;
     display: flex;
@@ -208,6 +51,7 @@ body {
 
 .img-content {
     position: relative;
+    width: 45%;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -235,7 +79,7 @@ body {
 }
 
 .gorila-head {
-    width: 35%;
+    width: 250px;
     filter: drop-shadow(0 0 0.3em rgb(255, 255, 255));
 }
 
@@ -418,7 +262,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     cursor: pointer;
     transition: 0.2s all;
     z-index: 9999;
@@ -529,3 +372,46 @@ body {
 
 
 /*******************Fim Footer**************************/
+
+
+
+@media screen and (max-width: 1450px) {
+    .content-register {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+
+    .img-content {
+        display: none;
+    }
+
+    .form-content {
+        width: 90%;
+    }
+
+    .login-register-links {
+        position: absolute;
+        width: 100%;
+        height: 12vh;
+        bottom: 0%;
+        left: 0%;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .login-register-links span {
+        
+        height: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .email-content, .password-content, .button-submit-login {
+        width: 85%;
+    }
+
+}

@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
+@import url("header.css");
 
 a {
     text-decoration: none;
@@ -33,160 +34,6 @@ body {
 }
 
 
-
-/*Header*/
-
-.container-header {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    font-family: 'AstronautFont';
-    z-index: 9999;
-}
-
-.content-header {
-    width: 95%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-#logo-link {
-    width: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 100%;
-}
-
-.content-header a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    color: rgb(187, 187, 187);
-}
-
-.planets-spaceflights, .home-link {
-    height: 3vh;
-    transition: 0.1s all;
-}
-
-.planets-spaceflights:hover, .home-link:hover {
-    height: 3vh;
-    color: #ffffff;
-}
-
-.links-border {
-    position: relative;
-    width: 180px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(201, 192, 192);
-    margin-left: 40px;
-    transition: 0.2s all;
-    cursor: pointer;
-}
-
-.links-border:hover > .header-login-register-link {
-    width: 140px;
-    border-left: 1px solid rgb(201, 192, 192);
-    border-right: 1px solid rgb(201, 192, 192);
-}
-
-.header-login-register-link {
-    position: absolute;
-    width: 190px;
-    height: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline-style: none;
-    transition: 0.2s all;
-    cursor: pointer;
-    background-color: rgb(36, 36, 36);
-}
-
-.join-space-program {
-    position: absolute;
-    right: 3%;
-    width: 270px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    outline-style: none;
-    cursor: pointer;
-}
-
-.border-left-div {
-    position: absolute;
-    left: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-.border-right-div {
-    position: absolute;
-    right: 0%;
-    width: 2px;
-    height: 30px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.3s all;
-}
-
-
-.border-top-div {
-    position: absolute;
-    top: 0%;
-    width: 250px;
-    height: 1px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.border-bottom-div {
-    position: absolute;
-    bottom: 0%;
-    width: 250px;
-    height: 1.5px;
-    background-color: rgb(202, 202, 202);
-    transition: 0.5s all;
-}
-
-.join-space-program:hover {
-    border-left: none;
-    border-right: none;
-}
-
-.join-space-program:hover > .border-top-div, .join-space-program:hover > .border-bottom-div {
-    background-color: rgb(201, 192, 192);
-}
-
-.join-space-program:hover > .border-left-div {
-    left: 10%;
-}
-.join-space-program:hover > .border-right-div {
-    right: 10%;
-}
-
-/*Fim header*/
-
-
-
-
 .container-join {
     width: 100%;
     height: 100vh;
@@ -194,6 +41,7 @@ body {
     align-items: center;
     justify-content: center;
     color: rgb(185, 185, 185);
+    flex-direction: column;
 }
 
 .content-join {
@@ -234,15 +82,6 @@ body {
 
 /****************************FORM******************************/
 
-.container-join {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
 
 .join-title {
     font-family: "AstronautFont";
@@ -259,6 +98,18 @@ form {
     color: rgb(185, 185, 185);
 }
 
+
+@media screen and (max-width: 950px){
+    
+    .space-vertical-poster {
+        display: none;
+    }
+
+    .join-description {
+        width: 90%;
+    }
+    
+}
 
 
 

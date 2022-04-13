@@ -7,6 +7,7 @@ function changeRegisterLink() {
     document.getElementsByClassName("register-link")[0].style.boxShadow = "8px 5px 16px -7px #1e1cb8";
     document.getElementsByClassName("register-link")[0].style.opacity = "1";
     document.getElementsByClassName("register-link")[0].style.color = "#e2e2e2";
+    
     document.getElementsByClassName("register-content")[0].style.bottom = "0%";
 
     //Alterar o login link
@@ -27,6 +28,7 @@ function changeLoginLink() {
     document.getElementsByClassName("login-link")[0].style.boxShadow = "8px 5px 16px -7px #1e1cb8";
     document.getElementsByClassName("login-link")[0].style.opacity = "1";
     document.getElementsByClassName("login-link")[0].style.color = "#e2e2e2";
+
     document.getElementsByClassName("login-content")[0].style.bottom = "0%";
 
     //Alterar o register link
